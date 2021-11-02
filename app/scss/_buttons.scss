@@ -6,10 +6,6 @@
   border: 0.1rem solid rgba($white, 0.6);
   background-color: $white;
 
-  @include breakpoints-down(medium) {
-    display: none;
-  }
-
   span {
     position: absolute;
     background-color: $primary;

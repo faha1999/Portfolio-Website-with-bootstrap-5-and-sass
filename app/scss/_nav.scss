@@ -10,4 +10,10 @@
       font-weight: 600;
     }
   }
+
+  .btn-rounded {
+    @include breakpoints-down(medium) {
+      display: none;
+    }
+  }
 }
