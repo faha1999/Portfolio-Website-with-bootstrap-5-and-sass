@@ -43,3 +43,27 @@
   background-color: $primary;
   padding-top: 0.5rem;
 }
+
+// Border
+.border-right {
+  border-right: 0.1rem solid $gray;
+  height: 100%;
+}
+
+// Display
+.display-3 {
+  &--title {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: inline-block;
+    background-clip: text;
+    background-image: linear-gradient(to right, $primary, $secondary);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    @include breakpoints-down(medium) {
+      font-size: 1rem !important;
+    }
+  }
+}
