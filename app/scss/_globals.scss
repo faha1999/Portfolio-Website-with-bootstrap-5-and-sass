@@ -67,3 +67,25 @@
     }
   }
 }
+
+// button
+.btn-outline-primary {
+  color: $purple-light;
+  border-color: $purple-light;
+
+  &:hover {
+    color: $white;
+    background-color: $purple-light;
+    border-color: $purple-light;
+  }
+}
+
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+  color: $white;
+  background-color: $purple-light;
+  border-color: $purple-light;
+}

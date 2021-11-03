@@ -44,3 +44,9 @@ $breakpoints-down: (
     @content;
   }
 }
+
+// transition
+@mixin transitionLayout {
+  transition-duration: 1000ms;
+  transition-property: all;
+}
