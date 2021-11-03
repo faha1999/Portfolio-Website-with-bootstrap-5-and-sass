@@ -70,13 +70,13 @@
 
 // button
 .btn-outline-primary {
-  color: $purple-light;
-  border-color: $purple-light;
+  color: $primary;
+  border-color: $primary;
 
   &:hover {
     color: $white;
-    background-color: $purple-light;
-    border-color: $purple-light;
+    background-color: $primary;
+    border-color: $primary;
   }
 }
 
