@@ -26,9 +26,58 @@
   &:hover {
     @include gradient;
     color: $white;
+    @include transitionLayout;
 
     span {
       background-color: rgba($black, 0.6);
     }
   }
+}
+
+// button
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    @include transitionLayout;
+  }
+}
+
+.btn-primary {
+  color: $primary;
+  border-color: $primary;
+  background-color: $primary;
+
+  &:focus {
+    background-color: $primary;
+  }
+
+  &:hover {
+    color: $white;
+    border-color: 1px solid $primary;
+    background-color: transparent;
+    transform: scale(1.2);
+    @include transitionLayout;
+
+    i,
+    i::before,
+    i::after,
+    i:focus {
+      color: $primary;
+    }
+  }
+}
+
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+  color: $white;
+  background-color: $purple-light;
+  border-color: $purple-light;
 }

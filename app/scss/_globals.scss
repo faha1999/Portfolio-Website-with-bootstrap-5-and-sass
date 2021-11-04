@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -48,6 +52,10 @@
 .border-right {
   border-right: 0.1rem solid $gray;
   height: 100%;
+
+  @include breakpoints-down(medium) {
+    border-right: none;
+  }
 }
 
 // Display
@@ -66,26 +74,4 @@
       font-size: 1rem !important;
     }
   }
-}
-
-// button
-.btn-outline-primary {
-  color: $primary;
-  border-color: $primary;
-
-  &:hover {
-    color: $white;
-    background-color: $primary;
-    border-color: $primary;
-  }
-}
-
-.btn-check:active + .btn-outline-primary,
-.btn-check:checked + .btn-outline-primary,
-.btn-outline-primary.active,
-.btn-outline-primary.dropdown-toggle.show,
-.btn-outline-primary:active {
-  color: $white;
-  background-color: $purple-light;
-  border-color: $purple-light;
 }
